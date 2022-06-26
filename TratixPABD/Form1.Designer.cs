@@ -32,8 +32,8 @@ namespace TratixPABD
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.textpass = new System.Windows.Forms.TextBox();
+            this.textusername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,6 +52,7 @@ namespace TratixPABD
             this.button1.TabIndex = 14;
             this.button1.Text = "LOGIN";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -59,7 +60,7 @@ namespace TratixPABD
             this.label3.ForeColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(120, 340);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 17);
+            this.label3.Size = new System.Drawing.Size(67, 16);
             this.label3.TabIndex = 13;
             this.label3.Text = "Password";
             // 
@@ -70,28 +71,28 @@ namespace TratixPABD
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(116, 260);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 17);
+            this.label2.Size = new System.Drawing.Size(70, 16);
             this.label2.TabIndex = 12;
             this.label2.Text = "Username";
             // 
-            // txtPassword
+            // textpass
             // 
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(119, 360);
-            this.txtPassword.Multiline = true;
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(293, 40);
-            this.txtPassword.TabIndex = 11;
+            this.textpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textpass.Location = new System.Drawing.Point(119, 360);
+            this.textpass.Multiline = true;
+            this.textpass.Name = "textpass";
+            this.textpass.PasswordChar = '*';
+            this.textpass.Size = new System.Drawing.Size(293, 40);
+            this.textpass.TabIndex = 11;
             // 
-            // txtUsername
+            // textusername
             // 
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(119, 280);
-            this.txtUsername.Multiline = true;
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(293, 40);
-            this.txtUsername.TabIndex = 10;
+            this.textusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textusername.Location = new System.Drawing.Point(119, 280);
+            this.textusername.Multiline = true;
+            this.textusername.Name = "textusername";
+            this.textusername.Size = new System.Drawing.Size(293, 40);
+            this.textusername.TabIndex = 10;
             // 
             // label1
             // 
@@ -99,9 +100,10 @@ namespace TratixPABD
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(339, 403);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 17);
+            this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 18;
             this.label1.Text = "Buat Akun";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -123,8 +125,8 @@ namespace TratixPABD
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.textpass);
+            this.Controls.Add(this.textusername);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -140,8 +142,8 @@ namespace TratixPABD
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox textpass;
+        private System.Windows.Forms.TextBox textusername;
         private System.Windows.Forms.Label label1;
     }
 }
